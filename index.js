@@ -1,6 +1,7 @@
-var app = new Vue({
+import routes from './routes';
+
+// 4. Create and mount the root instance.
+const app = new Vue({
   el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
+  router: new VueRouter({routes: routes}),
+});
