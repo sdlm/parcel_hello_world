@@ -5,30 +5,37 @@
     <title>Hello world!</title>
 
     <!-- CSS -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <!-- my own -->
+      <link rel="stylesheet" href="./custom.css">
 </head>
 <body>
 
-    <div id="app">
-        <!-- route outlet -->
-        <router-view></router-view>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        <div id="app">
+            <!-- route outlet -->
+            <router-view></router-view>
 
-        <router-link to="/">home</router-link>
-        <router-link to="/start">start</router-link>
-    </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
 
     <!-- JS -->
-        <!-- Vue -->
-            <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-            <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-
-        <!-- Bootstrap -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
-
-        <!-- my own -->
-            <script src="./index.js"></script>
+      <!-- Vue -->
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+      <!-- Bootstrap -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <!-- my own -->
+      <script src="./index.js"></script>
 </body>
 </html>
