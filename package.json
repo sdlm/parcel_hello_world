@@ -2,7 +2,10 @@
   "name": "parcel_hello_world",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/sdlm/parcel_hello_world.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdlm/parcel_hello_world.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
@@ -13,6 +16,19 @@
     "eslint-plugin-standard": "^3.0.1"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-beta.3"
-  }
+    "bootstrap": "^4.0.0-beta.3",
+    "fs": "0.0.1-security",
+    "vue": "^2.5.13",
+    "vue-router": "^3.0.1"
+  },
+  "description": "Simple project for understanding parcel bundler.",
+  "bugs": {
+    "url": "https://github.com/sdlm/parcel_hello_world/issues"
+  },
+  "homepage": "https://github.com/sdlm/parcel_hello_world#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "keywords": []
 }
